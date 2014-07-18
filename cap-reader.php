@@ -1,7 +1,8 @@
 <?php
 
 // Bienvenido a nuestro código =)
-// Creado para Nibsi por jose@josellausas en Julio 2014
+// Creado para Nibsi por: jose@josellausas en Julio 2014
+// Este archivo vive en:  https://github.com/zunware/RetoMXDemo
 
 // Clase que encapsula nuestra herramienta de parsing de CAP
 class LL_CAP
@@ -81,12 +82,14 @@ class LL_CAP
 								$my_area->data = $area->circle;
 							}
 
+							// Inserta esta area a el arreglo de areas
 							array_push($la_alerta->areas, $my_area);
 						}
 					}
 				}
 			}
 
+			// Inserta esta alerta a el arreglo de alertas
 			array_push($myCap->alertas, $la_alerta);
 		}
 
